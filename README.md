@@ -1,15 +1,15 @@
 # 🧩 PCSX2 Trainer Modules
 ### *Game-Specific Extensions for the PCSX2-Trainer-SDK*
 
-[![License](https://img.shields.io/github/license/YourUsername/PCSX2-Trainer-Modules?color=blue)](LICENSE)
+[![License](https://img.shields.io/github/license/NightFyre/PCSX2-Trainer-Modules?color=blue)](LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)](CONTRIBUTING.md)
-[![Made for PCSX2-Trainer-SDK](https://img.shields.io/badge/SDK-PCSX2--Trainer--SDK-red)](https://github.com/YourUsername/PCSX2-Trainer-SDK)
+[![Made for PCSX2-Trainer-SDK](https://img.shields.io/badge/SDK-PCSX2--Trainer--SDK-red)](https://github.com/NightFyre/PCSX2-Trainer-SDK)
 
 ---
 
 ## 📖 Overview
 
-This repository contains **official and community-developed Game Module SDKs** for the [PCSX2-Trainer-SDK](https://github.com/YourUsername/PCSX2-Trainer-SDK).
+This repository contains **official and community-developed Game Module SDKs** for the [PCSX2-Trainer-SDK](https://github.com/NightFyre/PCSX2-Trainer-SDK).
 
 Each module provides **game-specific support** including:
 
@@ -18,29 +18,6 @@ Each module provides **game-specific support** including:
 * Utilities for trainer development and debugging
 
 These modules are designed to be plug-and-play with the SDK — simply include them in your trainer’s source.
-
----
-
-## 📁 Repository Structure
-
-```
-PCSX2-Trainer-Modules/
-│
-├── GameA/
-│   ├── include/
-│   │   ├── gameA_structs.h
-│   │   └── gameA_offsets.h
-│   ├── src/
-│   │   └── gameA_util.cpp
-│   └── README.md     <- usage instructions for this module
-│
-├── GameB/
-│   ├── include/
-│   ├── src/
-│   └── README.md
-│
-└── README.md
-```
 
 ---
 
@@ -78,5 +55,50 @@ All content is licensed under the [MIT License](LICENSE) unless stated otherwise
 
 ## 🌐 Related Repositories
 
-* 🧰 [PCSX2-Trainer-SDK](https://github.com/YourUsername/PCSX2-Trainer-SDK) — the core SDK for trainer development
-* 🧩 [PCSX2-Trainer-Modules](https://github.com/YourUsername/PCSX2-Trainer-Modules) — official game module collection
+* 🧰 [PCSX2-Trainer-SDK](https://github.com/NightFyre/PCSX2-Trainer-SDK) — the core SDK for trainer development
+* 🧩 [PCSX2-Trainer-Modules](https://github.com/NightFyre/PCSX2-Trainer-Modules) — official game module collection
+
+---
+
+## 📁 Repository Structure
+
+```
+PCSX2-Trainer-Modules/
+│
+├── modules/
+│   ├── SOCOM2/
+│   │   ├── include/
+│   │   ├── src/
+│   │   ├── assets/
+│   │   └── README.md
+│   └── MGS3/
+│       ├── include/
+│       ├── src/
+│       ├── assets/
+│       └── README.md
+│
+├── template/
+│   ├── include/
+│   │   ├── template_classes.h
+│   │   ├── template_package.h
+│   │   ├── template_structs.h
+│   │   └── template_defines.h
+│   ├── src/
+│   │   └── template_package.cpp
+│   ├── assets/
+│   │   ├── preview.png
+│   │   └── notes.txt
+│   └── README.md
+│
+├── docs/
+│   ├── CONTRIBUTING.md
+│   ├── MODULE_GUIDE.md
+│   └── STRUCTURE_OVERVIEW.md
+│
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
+│
+├── LICENSE
+└── README.md
+```

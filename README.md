@@ -30,8 +30,7 @@ These modules are designed to be plug-and-play with the SDK — simply include t
 Example:
 
 ```cpp
-#include "modules/GameA/include/gameA_structs.h"
-#include "modules/GameA/include/gameA_offsets.h"
+#include "modules/GameA/include/gameA_package.h"
 ```
 
 ---

@@ -1,0 +1,4 @@
+# SOCOM 2: U.S. Navy Seals
+
+SERIAL: SCUS-97275
+CRC: 	0F6FC6CF
